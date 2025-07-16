@@ -22,7 +22,7 @@ class FixedDurationLoadSimulation extends Simulation {
   }
 
   val scn = scenario(name = "Fixed Duration Load Simulation")
-    .forever {
+    .forever { //Added .forever to the scenario
     exec(getAllVideoGames())
         .pause(duration = 5)
         .exec(getSpecificGame())
